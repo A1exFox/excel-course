@@ -1,0 +1,32 @@
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@function rem($px) {
+  @return $px / 16+'rem';
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: rem(12);
+}
+
+.container {}
+.excel {
+  &__header {}
+  &__toolbar {}
+  &__formula {}
+  &__table {}
+}
+@import 'header';
+@import 'toolbar';
+@import 'formula';
+@import 'table';
