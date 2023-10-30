@@ -1,32 +1,29 @@
-@import '~normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "~normalize.css";
 
-@function rem($px) {
-  @return $px / 16+'rem';
-}
+@import "header";
+@import "toolbar";
+@import "formula";
+@import "table";
+@import "dashboard";
 
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: rem(12);
+  font-size: 12px;
 }
 
-.container {}
 .excel {
-  &__header {}
-  &__toolbar {}
-  &__formula {}
-  &__table {}
+  position: relative;
+  color: #888;
+  height: 100%;
+  max-width: 100%;
+  font-size: .8rem;
 }
-@import 'header';
-@import 'toolbar';
-@import 'formula';
-@import 'table';
+
+
